@@ -1,0 +1,6 @@
+{
+	"type": "module",
+	"name": "common-fe",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts"
+}
