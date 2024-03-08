@@ -1,0 +1,148 @@
+$-size: 18px;
+
+// Wrapper
+.checkbox {
+	display: inline-flex;
+	// text on the right side by default (flex-direction: row)
+	align-items: center;
+	cursor: pointer;
+	user-select: none;// disable highlight on double click
+}
+
+/**
+ * Modifiers
+ */
+// Text position
+.checkbox_textLeft {
+	flex-direction: row-reverse;
+}
+
+.checkbox_textTop {
+	flex-direction: column-reverse;
+}
+
+.checkbox_textBottom {
+	flex-direction: column;
+}
+
+// Basic input
+.checkboxInput {
+	display: none;
+}
+
+// Input box replacement
+.checkboxBox {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: $-size;
+	height: $-size;
+	border: 2px solid var(--color-form-primary);
+	border-radius: 50%;
+	transition: background-color var(--transition-default);
+}
+
+// Input mark replacement
+.checkboxMark {
+	position: absolute;
+	left: 14%;
+	top: 50%;
+	width: 70%;
+	height: 40%;
+	border-left: 2px solid var(--color-form-contrast);
+	border-bottom: 2px solid var(--color-form-contrast);
+	transform-origin: left top;
+	transform: rotate(-45deg);
+}
+
+// Checkbox mark (mixed state)
+.checkboxMarkMixed {
+	position: absolute;
+	height: 4px;
+	right: 2px;
+	left: 2px;
+	border-radius: 2px;
+	background-color: var(--color-form-primary);
+}
+
+// Text
+.checkboxText {
+	display: inline-block;
+	font: var(--font-form-text);
+
+	&_right {
+		margin-left: 4px;
+	}
+
+	&_left {
+		margin-right: 4px;
+	}
+
+	&_top {
+		margin-bottom: 4px;
+	}
+
+	&_bottom {
+		margin-top: 4px;
+	}
+}
+
+/**
+ * States
+ */
+// Focus
+.checkbox:focus-visible {
+	outline: 2px solid var(--color-form-focus);
+	outline-offset: 4px;
+	border-radius: 10px;
+}
+
+// Checkbox checked
+.checkboxInput:checked + .checkboxBox {
+	background-color: var(--color-form-primary);
+}
+
+// Checkbox disabled
+.checkbox_disabled {
+	--color-form-primary: var(--color-form-disabled);
+	cursor: not-allowed;
+}
+
+/**
+ * Animations
+ */
+// Checkbox mark animation
+.checkbox-enter-active {
+	transition:
+		height var(--transition-default),
+		width var(--transition-default-duration) var(--transition-default),
+		opacity var(--transition-default),
+		border-color var(--transition-default);
+}
+
+.checkbox-leave-active {
+  transition:
+		width var(--transition-default),
+		height var(--transition-default-duration) var(--transition-default),
+		opacity var(--transition-default),
+		border-color var(--transition-default);
+}
+
+.checkbox-enter-from,
+.checkbox-leave-to {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+// Mixed checkbox mark animation
+.checkbox-mixed-enter-active,
+.checkbox-mixed-leave-active {
+  transition: background-color var(--transition-default);
+}
+
+.checkbox-mixed-enter-from,
+.checkbox-mixed-leave-to {
+  background-color: transparent;
+}
