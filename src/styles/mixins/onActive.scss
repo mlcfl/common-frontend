@@ -1,0 +1,6 @@
+/// Applies styles when the element's active state
+@mixin onActive {
+	&:active {
+		@content;
+	}
+}

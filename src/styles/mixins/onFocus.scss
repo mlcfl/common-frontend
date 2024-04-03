@@ -1,0 +1,13 @@
+/// Applies styles if focus is from the keyboard
+/// Also contains a fallback for browsers that do not support this selector (Safari)
+@mixin onFocus {
+	&:focus-visible {
+		@content;
+	}
+
+	@supports not selector(*:focus-visible) {
+		&:focus {
+			@content;
+		}
+	}
+}

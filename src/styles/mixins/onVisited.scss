@@ -1,0 +1,6 @@
+/// Applies styles to a visited link
+@mixin onVisited {
+	&:visited {
+		@content;
+	}
+}

@@ -1,0 +1,9 @@
+/// Applies styles on hover if the device supports hover
+/// Allows you to avoid a bug on phones when hover styles are applied when tapping
+@mixin onHover {
+	@media (hover: hover) {
+		&:hover {
+			@content;
+		}
+	}
+}
