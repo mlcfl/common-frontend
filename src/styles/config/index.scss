@@ -1,0 +1,18 @@
+// Config and base SCSS variables
+
+// Base points
+$bp: 2px;
+$bp2: $bp * 2;// 4px
+$bp4: $bp * 4;// 8px
+$bp6: $bp * 6;// 12px
+$bp8: $bp * 8;// 16px
+$bp10: $bp * 10;// 20px
+$bp16: $bp * 16;// 32px
+$bp32: $bp * 32;// 64px
+
+// Sidebar
+$sidebarMinWidth: 240px;
+$sidebarMaxWidth: 320px;
+
+// Main area
+$mainAreaBaseWidth: 768px;
