@@ -1,0 +1,8 @@
+*,
+*::before,
+*::after {
+	// Include borders and paddings when calculating element sizes
+	box-sizing: border-box;
+	// Reset default cursors for some elements
+	cursor: inherit;
+}

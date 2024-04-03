@@ -1,0 +1,38 @@
+html {
+	/**
+	 * Set sizes
+	 * Do not use vw/vh, because they include the scrollbar and address bar in mobile browsers
+	 * @see https://bitsofco.de/viewport-vs-percentage-units
+	 */
+	width: 100%;
+	height: 100%;
+	// Change the default cursor (it should be overridden on specific elements)
+	cursor: default;
+
+	/**
+	 * Fonts
+	 */
+	/**
+	 * Base font size for HTML, on which rem is based. In most browsers, the default font size
+	 * is 16px. Therefore, for convenience when working with rem in layout, but in px in design,
+	 * the size is calculated as (62.5 / 100) * 16px = 10px.
+	 * So, for a browser with a default font size of 16px, the base font size for HTML will be 10px.
+	 * Defining the size in percentages makes it accessible to users who change the font size
+	 * in the browser settings, and also allows it to be changed from the server side or
+	 * through JavaScript, as the size is set through a CSS variable.
+	 * @see https://css-tricks.com/accessible-font-sizing-explained
+	 */
+	--font-base: 62.5%;
+	// Enabling system fonts on iOS for rem
+	font: -apple-system-body;
+	// Setting the base font size
+	font-size: var(--font-base);
+	// Prevent font enlargement when changing orientation on iOS
+	-webkit-text-size-adjust: 100%;
+
+	/**
+	 * Colors
+	 */
+	// Changing the highlight color when you tap on an element (not all browsers)
+	-webkit-tap-highlight-color: transparent;
+}

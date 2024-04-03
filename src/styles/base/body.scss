@@ -1,0 +1,21 @@
+body {
+	// Remove margins
+	margin: 0;
+	// Set sizes
+	width: 100%;
+	height: 100%;
+
+	/**
+	 * Fonts
+	 */
+	// Removing possible spaces between elements
+	font-size: 0;
+	line-height: 1;
+	// Default sans serif font
+	font-family: sans-serif;
+	// Improve readability
+	text-rendering: optimizeLegibility;
+	// Font smoothing
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: auto;
+}
