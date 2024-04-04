@@ -1,0 +1,24 @@
+:root {
+	// Base colors
+	--color-base: white;
+	--color-base-contrast: black;
+
+	// Main colors
+	--color-primary: pink;
+	--color-secondary: lightgray;
+
+	// Notification colors
+	--color-info: blue;
+	--color-warning: orange;
+	--color-danger: red;
+	--color-success: green;
+
+	// Form colors
+	--color-form-primary: black;
+	--color-form-contrast: white;
+	--color-form-disabled: gray;
+
+	// Focus
+	--color-focus: blue;
+	--color-form-focus: red;
+}

@@ -1,0 +1,38 @@
+@use './vue';
+
+/**
+ * Transitions, animations, scroll-behavior and everything that can affect the animation
+ */
+:root {
+	/**
+	 * Transitions
+	 */
+	--transition-default-duration: 250ms;
+	--transition-default: 250ms linear;
+	--transition-fast-duration: 150ms;
+	--transition-fast: 150ms linear;
+	--transition-slow-duration: 500ms;
+	--transition-slow: 500ms linear;
+
+	/**
+	 * Scroll behavior
+	 */
+	--transition-scroll: smooth;
+
+	@media (prefers-reduced-motion: reduce) {
+		// Transitions
+		--transition-default-duration: 0s;
+		--transition-default: 0s linear;
+		--transition-fast-duration: 0s;
+		--transition-fast: 0s linear;
+		--transition-slow-duration: 0s;
+		--transition-slow: 0s linear;
+		// Scroll behavior
+		--transition-scroll: auto;
+	}
+
+	/**
+	 * Vue animations for <Transition></Transition>
+	 */
+	@include vue.fade;
+}

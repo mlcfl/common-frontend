@@ -1,0 +1,11 @@
+@mixin fade {
+	.animation-fade-enter-active,
+	.animation-fade-leave-active {
+		transition: opacity var(--transition-default);
+	}
+
+	.animation-fade-enter-from,
+	.animation-fade-leave-to {
+		opacity: 0;
+	}
+}

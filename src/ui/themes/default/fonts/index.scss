@@ -1,0 +1,22 @@
+:root {
+	$-default: var(--font-family-default);
+
+	--font-family-default: 'Roboto', sans-serif;
+
+	--font-default: normal 400 1.6rem/2rem #{$-default};
+
+	/**
+	 * Headings
+	 */
+	--font-heading-1: normal 400 1.6rem/2rem #{$-default};
+	--font-heading-2: normal 400 1.6rem/2rem #{$-default};
+	--font-heading-3: normal 400 1.6rem/2rem #{$-default};
+	--font-heading-4: normal 400 1.6rem/2rem #{$-default};
+	--font-heading-5: normal 400 1.6rem/2rem #{$-default};
+	--font-heading-6: normal 400 1.6rem/2rem #{$-default};
+
+	/**
+	 * Forms
+	 */
+	--font-form-default: normal 400 1.6rem/2rem #{$-default};
+}
