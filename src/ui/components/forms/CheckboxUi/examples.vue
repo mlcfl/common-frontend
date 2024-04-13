@@ -36,7 +36,7 @@ span {
 	color: green;
 }
 
-.checkbox_size-big .checkboxBox {
+.checkbox_sizeBig .checkboxBox {
 	width: 30px;
 	height: 30px;
 }
