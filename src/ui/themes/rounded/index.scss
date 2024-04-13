@@ -3,4 +3,5 @@
 @use './cosmetic';
 @use './animations';
 
-@use '../../components/forms/CheckboxUi/themes/rounded.scss';
+@use '../../components/forms/CheckboxUi/themes/rounded.scss' as *;
+@use '../../components/display/HeadingUi/themes/rounded.scss' as *;

@@ -1,0 +1,30 @@
+.heading {
+	margin: 0;
+	overflow-wrap: break-word;
+	hyphens: auto;
+	cursor: text;
+
+	&_h1 {
+		font: var(--font-heading-1);
+	}
+
+	&_h2 {
+		font: var(--font-heading-2);
+	}
+
+	&_h3 {
+		font: var(--font-heading-3);
+	}
+
+	&_h4 {
+		font: var(--font-heading-4);
+	}
+
+	&_h5 {
+		font: var(--font-heading-5);
+	}
+
+	&_h6 {
+		font: var(--font-heading-6);
+	}
+}
