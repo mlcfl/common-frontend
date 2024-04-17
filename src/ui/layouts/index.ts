@@ -1,1 +1,1 @@
-export const layout = 'Layout';
+export * from './BaseLayoutUi';
